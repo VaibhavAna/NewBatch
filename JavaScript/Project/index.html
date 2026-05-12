@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="container">
+        <button onclick="randomValue()">Click me </button>
+        <button onclick="copyCode()">Copy Code</button>
+        <input id="color-gen">
+
+    </div>
+    <script>
+        let randomValue = () => {
+            let randomNum = Math.floor(Math.random() * 16777215)
+            let randomColor = "#" + randomNum.toString(16)
+            console.log(randomColor)
+
+            document.body.style.backgroundColor = randomColor
+            document.getElementById('color-gen').value = randomColor
+        }
+
+        let copyCode = () => {
+
+
+            let colorCode = document.getElementById('color-gen').value
+
+            navigator.clipboard.writeText(colorCode)
+            alert(colorCode)
+
+            
+
+        }
+
+    </script>
+</body>
+
+</html>
+
+
+
