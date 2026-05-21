@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Responsive Tailwind Landing Page</title>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 font-sans">
+
+  <!-- Navbar -->
+  <nav class="bg-white shadow-md">
+    <div class="max-w-7xl mx-auto px-6 py-4">
+
+      <div class="flex justify-between items-center">
+
+        <!-- Logo -->
+        <div class="text-2xl font-bold text-blue-600">
+          MyWebsite
+        </div>
+
+        <!-- Desktop Menu -->
+        <ul class="hidden md:flex space-x-8 text-gray-700 font-medium">
+          <li><a href="#" class="hover:text-blue-600">Home</a></li>
+          <li><a href="#" class="hover:text-blue-600">About</a></li>
+          <li><a href="#" class="hover:text-blue-600">Services</a></li>
+          <li><a href="#" class="hover:text-blue-600">Contact</a></li>
+        </ul>
+
+        <!-- Mobile Menu Button -->
+        <button id="menu-btn" class="md:hidden text-3xl">
+          ☰
+        </button>
+
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden md:hidden mt-4">
+        <ul class="flex flex-col space-y-4 text-gray-700 font-medium">
+          <li><a href="#" class="block hover:text-blue-600">Home</a></li>
+          <li><a href="#" class="block hover:text-blue-600">About</a></li>
+          <li><a href="#" class="block hover:text-blue-600">Services</a></li>
+          <li><a href="#" class="block hover:text-blue-600">Contact</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="min-h-screen flex items-center justify-center">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+      <div class="grid md:grid-cols-2 gap-10 items-center">
+
+        <!-- Left Content -->
+        <div>
+
+          <h1 class="text-4xl md:text-6xl font-bold text-gray-800 leading-tight">
+            Build Modern <span class="text-blue-600">Websites</span>
+          </h1>
+
+          <p class="mt-6 text-lg text-gray-600">
+            Create fast, responsive, and beautiful landing pages using
+            HTML, CSS, and Tailwind CSS.
+          </p>
+
+          <div class="mt-8 flex gap-4">
+            <button class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition">
+              Get Started
+            </button>
+
+            <button class="border border-blue-600 text-blue-600 px-6 py-3 rounded-lg hover:bg-blue-600 hover:text-white transition">
+              Learn More
+            </button>
+          </div>
+
+        </div>
+
+        <!-- Right Image -->
+        <div class="flex justify-center">
+
+          <img
+            src="https://images.unsplash.com/photo-1498050108023-c5249f4df085"
+            alt="Website"
+            class="rounded-2xl shadow-xl w-full max-w-lg"
+          />
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- Features Section -->
+  <section class="py-20 bg-white">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+      <div class="text-center mb-16">
+
+        <h2 class="text-4xl font-bold text-gray-800">
+          Features
+        </h2>
+
+        <p class="mt-4 text-gray-600">
+          Everything you need for a modern website.
+        </p>
+
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-10">
+
+        <!-- Card 1 -->
+        <div class="bg-gray-100 p-8 rounded-2xl shadow hover:shadow-lg transition">
+
+          <h3 class="text-2xl font-semibold mb-4 text-blue-600">
+            Responsive
+          </h3>
+
+          <p class="text-gray-600">
+            Works perfectly on mobile, tablet, and desktop devices.
+          </p>
+
+        </div>
+
+        <!-- Card 2 -->
+        <div class="bg-gray-100 p-8 rounded-2xl shadow hover:shadow-lg transition">
+
+          <h3 class="text-2xl font-semibold mb-4 text-blue-600">
+            Fast
+          </h3>
+
+          <p class="text-gray-600">
+            Optimized layout with modern Tailwind utility classes.
+          </p>
+
+        </div>
+
+        <!-- Card 3 -->
+        <div class="bg-gray-100 p-8 rounded-2xl shadow hover:shadow-lg transition">
+
+          <h3 class="text-2xl font-semibold mb-4 text-blue-600">
+            Modern UI
+          </h3>
+
+          <p class="text-gray-600">
+            Beautiful components and clean design system.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-6">
+
+    <div class="max-w-7xl mx-auto px-6 text-center">
+
+      <p>
+        © 2026 MyWebsite. All rights reserved.
+      </p>
+
+    </div>
+
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+  </script>
+
+</body>
+</html>

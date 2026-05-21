@@ -1,0 +1,101 @@
+/* Reset Default Styles */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body{
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: #333;
+    padding: 15px 30px;
+}
+
+/* Logo */
+.logo{
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Nav Links */
+.nav-links{
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li{
+    margin-left: 20px;
+}
+
+.nav-links a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Hero Section */
+.hero{
+    height: 90vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+.hero h1{
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.hero p{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.hero button{
+    padding: 12px 25px;
+    border: none;
+    background-color: #333;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px){
+
+    .navbar{
+        flex-direction: column;
+    }
+
+    .nav-links{
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .nav-links li{
+        margin: 10px 0;
+    }
+
+    .hero h1{
+        font-size: 32px;
+    }
+
+    .hero p{
+        font-size: 16px;
+    }
+}

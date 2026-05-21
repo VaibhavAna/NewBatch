@@ -54,3 +54,59 @@
 // console.log(newArry);
 
 
+//Interview prep
+
+//Clousure
+ //A function that remembers and can use its variable from its outer scope even after the outer function has finnised running .
+
+//  function outer(){
+//     let count =0;
+
+//     return function inner(){
+//         count++;
+//         return count;
+//     };
+//  }
+
+//  const fn =outer();
+//  console.log(fn());
+
+
+// function outer(){
+//     count=0;
+
+//     return function inner(){
+//         count++;
+//         return count;
+//     };
+// }
+// const fn=outer();
+// console.log(fn());
+
+
+// function outer(){
+//     count=0;
+
+//     return function inner(){
+//         count++;
+//         return count;
+
+//     };
+
+// }
+// const fn=outer();
+// console.log(fn());
+
+//reverse a string 
+
+// function reverse(str){
+//     return str.split("").reverse().join("");
+// }
+// console.log(reverse("Hello"));
+
+// function reverse(str){
+//     return str.split("").reverse().join("");
+// }
+// console.log(reverse("Vaibhav"));
+
+

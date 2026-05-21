@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>October</title>
+
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 min-h-screen">
+
+  <header class="bg-white shadow-md w-full fixed top-0 left-0 z-50">
+
+    <nav class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+
+      
+      <div class="text-2xl font-bold text-black cursor-pointer">
+        October
+      </div>
+
+    
+      <ul class="hidden md:flex items-center gap-8 font-medium text-gray-700">
+
+        <li></li><a href="#" class="hover:text-black transition">Home</a></li>
+        <li><a href="#" class="hover:text-black transition">About</a></li>
+        <li><a href="#" class="hover:text-black transition">Services</a></li>
+        <li><a href="#" class="hover:text-black transition">Contact</a></li>
+
+      </ul>
+
+      <button id="menu-btn" class="md:hidden text-3xl font-bold text-black">☰</button>
+    </nav>
+
+    <div id="mobile-menu"
+      class="hidden md:hidden bg-white border-t border-gray-200 shadow-lg">
+      <div class="flex flex-col px-6 py-5 space-y-5 text-gray-700 font-medium">
+
+        <a href="#" class="hover:text-black transition">Home</a>
+        <a href="#" class="hover:text-black transition">About</a>
+        <a href="#" class="hover:text-black transition">Services</a>
+        <a href="#" class="hover:text-black transition">Contact</a>
+
+        <button class="text-black font-semibold">Login</button>
+
+      </div>
+
+    </div>
+
+  </header>
+
+ 
+  <section class="pt-32 px-6">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-16">
+      <div class="max-w-xl">
+
+        <h1 class="text-5xl md:text-6xl font-bold leading-tight text-black">
+
+          <span class="text-gray-500"> Focus on Future</span>
+
+        </h1>
+
+        <p class="mt-6 text-lg text-gray-600 leading-relaxed">
+
+          October is a nuclear power that could shape the future.
+          A single small particle has the potential to destroy part
+          of the Earth in less than a minute.
+
+        </p>
+
+        
+        <div class="mt-8 flex gap-4">
+
+          <button
+            class="bg-black text-white px-6 py-3 rounded-full hover:bg-gray-800 transition">
+
+            Get Started
+
+          </button>
+
+          <button
+            class="border border-black px-6 py-3 rounded-full hover:bg-black hover:text-white transition">
+
+            Learn More
+
+          </button>
+
+        </div>
+
+      </div>
+
+      
+      <div class="bg-white p-8 rounded-3xl shadow-xl w-full max-w-md">
+
+        <h2 class="text-2xl font-bold mb-6">
+          Why Choose Us?
+        </h2>
+
+        <div class="space-y-5">
+
+          <div class="bg-gray-100 p-4 rounded-2xl">
+
+            <h3 class="font-semibold text-lg">
+              Responsive Design
+            </h3>
+
+            <p class="text-gray-600 text-sm mt-1">
+              Works perfectly on mobile and desktop.
+            </p>
+
+          </div>
+
+          <div class="bg-gray-100 p-4 rounded-2xl">
+
+            <h3 class="font-semibold text-lg">
+              Modern UI
+            </h3>
+
+            <p class="text-gray-600 text-sm mt-1">
+              Clean and professional interface.
+            </p>
+
+          </div>
+
+          <div class="bg-gray-100 p-4 rounded-2xl">
+
+            <h3 class="font-semibold text-lg">
+              Fast Development
+            </h3>
+
+            <p class="text-gray-600 text-sm mt-1">
+              Build projects quickly using Tailwind CSS.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <script>
+    
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+  </script>
+
+</body>
+
+</html>
